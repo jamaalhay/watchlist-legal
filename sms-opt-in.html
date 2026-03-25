@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMS Opt-In — PikPal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/" class="logo" aria-label="PikPal home">
+        <span class="logo-icon">P</span>
+        PikPal
+      </a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">SMS Opt-In Process</h1>
+    <p class="page-subtitle">How users consent to receive SMS messages from PikPal.</p>
+
+    <section class="card">
+      <h2>Phone Verification Flow</h2>
+      <p>PikPal uses SMS solely for <strong>one-time verification codes</strong> during sign-in. No marketing, promotional, or recurring messages are sent.</p>
+
+      <h3>How it works:</h3>
+      <ol>
+        <li>The user navigates to the PikPal sign-in page.</li>
+        <li>The user enters their phone number in the "Sign in with your phone" section.</li>
+        <li>The user taps <strong>"Send code"</strong> — this is the explicit opt-in action.</li>
+        <li>A single 6-digit verification code is sent via SMS.</li>
+        <li>The user enters the code to complete sign-in.</li>
+      </ol>
+      <p>No SMS is sent without the user explicitly initiating the request by tapping "Send code." Users can also choose to sign in with Google instead, bypassing SMS entirely.</p>
+
+      <h3>Screenshot of the sign-in page:</h3>
+      <div style="text-align:center; margin: 2rem 0;">
+        <img src="pikpal-login-opt-in.png" alt="PikPal login page showing phone number input and Send code button" style="max-width: 400px; width: 100%; border-radius: 12px; border: 1px solid #1E293B;">
+      </div>
+
+      <h3>Message frequency &amp; content:</h3>
+      <ul>
+        <li><strong>Frequency:</strong> One message per sign-in attempt, only when the user requests it.</li>
+        <li><strong>Content:</strong> A 6-digit numeric verification code. Example: <em>"Your PikPal verification code is: 123456"</em></li>
+        <li><strong>No recurring messages.</strong> No marketing. No promotions.</li>
+      </ul>
+
+      <h3>Opt-out:</h3>
+      <p>Users can stop receiving SMS at any time by choosing to sign in with Google instead. Since messages are only sent on-demand, there is no subscription to cancel. Users may also reply STOP to any message.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>PikPal &mdash; Built by an independent developer.</p>
+    </div>
+  </footer>
+</body>
+</html>
